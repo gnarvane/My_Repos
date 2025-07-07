@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Insurance Quote</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Health Insurance</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/motor">Motor</a>
+      <a href="/health">Health</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Get a Quote</h2>
+    <form action="/health/quote" method="POST">
+      <label for="age">Primary Applicant Age</label>
+      <input type="number" id="age" name="age" min="1" max="100" required>
+
+      <label for="members">Number of Members</label>
+      <input type="number" id="members" name="members" min="1" max="10" required>
+
+      <label for="sumInsured">Sum Insured (INR)</label>
+      <input type="number" id="sumInsured" name="sumInsured" step="50000" min="100000" required>
+
+      <button type="submit">Get Quote</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; <%= new Date().getFullYear() %> General Insurance Co.
+  </footer>
+</body>
+</html>

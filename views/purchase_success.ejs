@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Policy Purchased</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1><%= policyType %></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/motor">Motor</a>
+      <a href="/health">Health</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Thank you for your purchase!</h2>
+    <p>Your <%= policyType %> policy has been successfully purchased. A confirmation email will be sent to you shortly.</p>
+    <a href="/" class="btn">Back to Home</a>
+  </main>
+
+  <footer>
+    &copy; <%= new Date().getFullYear() %> General Insurance Co.
+  </footer>
+</body>
+</html>
